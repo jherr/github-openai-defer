@@ -1,0 +1,359 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #000000;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  tab-size: 4;
+  font-feature-settings: "rlig" 1,"calt" 1,"ss01" 1,"ss06" 1;
+  color-scheme: dark;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+          "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+          sans-serif;
+  -webkit-font-smoothing: antialiased;
+  
+  line-height: 1.75rem;
+}
+
+::selection {
+  background-color: white !important;
+  color: black !important;
+}
+
+.hidden-at-load {
+  visibility: hidden;
+}
+
+.header-container {
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(12px);
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+}
+
+/* mx-[40px] py-[40px] flex items-center  */
+
+@media (min-width: 768px) {
+  .header-container > div {
+    -webkit-text-size-adjust: 100%;
+    tab-size: 4;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+      Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+      Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-feature-settings: normal;
+    line-height: inherit;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+.header-container > div {
+  tab-size: 4;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-feature-settings: normal;
+  line-height: inherit;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: 40px;
+  margin-right: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.header-button {
+  text-decoration: none;
+}
+
+.header-button > div {
+  user-select: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  align-items: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  transition: background 0.5s ease-out 0s;
+  color: rgb(255, 255, 255);
+  background: transparent;
+}
+
+.header-button > div:hover, .header-button.active > div {
+  background: rgb(40, 40, 40) !important;
+}
+
+.header-button + .header-button {
+  margin-left: 8px;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+
+h2,
+h3,
+h4{
+  margin: 40px 0;
+}
+
+h5,
+h6 { 
+  margin: 40px 0 20px 0;
+}
+
+
+
+h1 {
+  -webkit-text-size-adjust: 100%;
+  tab-size: 4;
+  font-feature-settings: normal;
+  -webkit-font-smoothing: antialiased;
+  visibility: visible;
+  box-sizing: border-box;
+  margin: 0;
+  width: 915px;
+  padding-bottom: 16px;
+  font-size: 60px;
+  line-height: 80px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  -webkit-box-align: center;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -1.6px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 16px;
+  display: flex;
+}
+
+h2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+  border: none;
+  margin-bottom: 8px;
+}
+
+h1 + p {
+  margin: 0;
+  -webkit-text-size-adjust: 100%;
+  tab-size: 4;
+  font-feature-settings: "rlig" 1,"calt" 1,"ss01" 1,"ss06" 1;
+  color-scheme: dark;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+          "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+          sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  line-height: inherit;
+  border-radius: .25rem;
+  /* padding-bottom: 5rem; */
+  font-weight: 500;
+  transition-property: color,background-color,border-color,-webkit-text-decoration-color,text-decoration-color,fill,stroke;
+  transition-duration: .15s;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+  word-break: break-word;
+  color: #d1d5db;
+}
+
+
+.buttonPrimary {
+  outline: none;
+  border: none;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  transition: background 0.5s ease-out 0s;
+  color: rgb(0, 0, 0);
+  background: rgb(237, 237, 237);
+}
+.buttonPrimary:hover {
+  background: #a0a0a0;
+}
+
+.buttonTertiary {
+  user-select: none;
+  display: flex;
+  align-items: center;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  transition: background 0.5s ease-out 0s;
+  color: #fff;
+  background: #000;
+}
+.buttonTertiary:hover {
+  background: #282828;
+}
+
+.input {
+  outline: none;
+  box-sizing: border-box;
+  flex: 1;
+  padding: 6px 12px;
+  color: #ededed;
+  background-color: #282828;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+
+  margin-right: 6px;
+  width: 265px;
+}
+
+form {
+  display: flex;
+  margin: 60px 0 20px 0;
+}
+
+.codeblock-container {
+  position: relative;
+  padding: 22px 16px;
+  background: rgb(40, 40, 40) !important;
+  color: hsl(0,0%,93.0%);
+  font-family: "IBM Plex Mono",Courier,Roboto Mono,Inconsolata, Source Code Pro;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  border-radius: 8px;
+  margin: 0 0 40px 0;
+  padding-right: 30px;
+}
+
+.codeblock-content {
+  padding-right: 57px;
+  max-width: 700px;
+}
+
+.codeblock-copy-btn {
+  z-index: 42;
+  position: absolute;
+  top: 18px;
+  right: 16px;
+  cursor: pointer;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.input:focus {
+  background-color: #282828;
+  box-shadow: inset 0px 0px 0px 1.5px #ededed;
+}
+.input:hover {
+  background-color: #343434;
+}
+
+.input::placeholder {
+  color: #707070;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+
+.container {
+  position: relative;
+  background: radial-gradient(114.74% 81.67% at 49.44% 59.64%, rgb(28, 28, 28) 47.4%, rgba(28, 28, 28, 0.4) 100%);
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1432px;
+  padding-top: 50px;
+  margin-top: 112px;;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(/Noise.png);
+  background-size: contain;
+  opacity: 0.4;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+}
+
+.builtWith-container {
+  display: flex;
+  margin: 20px 0 40px 0;
+}
+
+.builtWith {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+
+  margin-right: 8px;
+
+  color: #ffffff;
+}
